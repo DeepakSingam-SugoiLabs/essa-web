@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "proxima-nova";
+  font-weight: 700;
+  src: local("proxima-nova"),
+    url("../fonts/ProximaNovaBold.otf") format("opentype");
+}
+@font-face {
+  font-family: "proxima-nova";
+  font-weight: 400;
+  src: local("proxima-nova"),
+    url("../fonts/ProximaNovaRegular.otf") format("opentype");
+}
+@font-face {
+  font-family: "proxima-nova";
+  font-weight: 200;
+  src: local("proxima-nova"),
+    url("../fonts/ProximaNovaLight.otf") format("opentype");
+}
+@font-face {
+  font-family: "sfdisplay-regular";
+  src: local("sfdisplay-regular"),
+    url("../fonts/sfdisplayregular.ttf") format("opentype");
+}
+@font-face {
+  font-family: "sfdisplay-bold";
+  src: local("sfdisplay-bold"),
+    url("../fonts/sfdisplaybold.ttf") format("opentype");
+}
+@font-face {
+  font-family: "sftext-regular";
+  src: local("sftext-regular"),
+    url("../fonts/sftextregular.ttf") format("opentype");
+}
+@font-face {
+  font-family: "sfdisplay-light";
+  src: local("sfdisplay-light"),
+    url("../fonts/sfdisplaylight.ttf") format("opentype");
+}
+@font-face {
+  font-family: "sftext-bold";
+  src: local("sftext-bold"), url("../fonts/sftextbold.ttf") format("opentype");
+}
