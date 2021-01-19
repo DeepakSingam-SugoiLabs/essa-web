@@ -29,7 +29,7 @@ export function SmartAttendance({history}) {
         <MdKeyboardBackspace size={40} onClick={()=>history.push('/dashboard')} className="pointer"/>
         <Heading title="Smart Attendence" design="ml-3"/>
         </AlignItems>
-        <ClockIn history={history}/>
+        <ClockIn history={history} style="height: 550px;"/>
   </MainPage>;
 }
 

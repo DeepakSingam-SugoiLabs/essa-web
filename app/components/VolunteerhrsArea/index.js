@@ -19,6 +19,7 @@ font-family:"sfdisplay-regular";
 color:var(--FARAH-verify-grey);
 `
 const MainV = styled.div`
+height:450px;
 margin-left:50px;
 margin-top:55px;
 .inputsize{
@@ -30,7 +31,7 @@ margin-top:55px;
   line-height: 1.19;
   letter-spacing: normal;
   text-align: left;
-  color:var(--FARAH-verify-grey);
+  color:black;
 }
 .logdatabtn{
   position:absolute;

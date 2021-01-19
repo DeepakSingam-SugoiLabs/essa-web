@@ -28,11 +28,24 @@ const HeadLayout = styled.div`
 .inputclass{
 border:none;
 font-family:"sfdisplay-bold";
-font-size:32px;
+font-size:27px;
 line-height:38px;
 :focus{
   outline:none;
 }
+}
+.inputclass2{
+  border:none;
+  font-size:20px;
+
+}
+.inputclass3{
+  border:none;
+  font-size:17px;
+
+}
+.date{
+  margin-bottom:10px;
 }
 `
 
@@ -40,7 +53,7 @@ const Button = styled.button`
 border:none;
 padding:20px;
 font-family:"sfdisplay-regular";
-font-size:21px;
+font-size:17px;
 line-height:25px;
 background:var(--FARAH-white);
 border-radius:10px;
@@ -52,8 +65,8 @@ margin-top:10px;
 }
 .fileaddtxt{
 font-family:"sfdisplay-bold";
-font-size:21px;
-line-height:25px;
+font-size:17px;
+line-height:21px;
 color:var(--FARAH-notify-blue);
 }
 
@@ -195,16 +208,16 @@ function ExceptionArea({history,id}) {
   
   return <CardLayout>
            {!dataLoading ? <HeadLayout className="ml-5 my-3">
-             <Label onClick={()=>{console.log(filesToUpload)}}>Date</Label>
-             <DatePicker selected={newDate}  placeholderText="When" className="inputclass" onChange={handleChange} minDate={new Date()}/>
+             <Label className="date"onClick={()=>{console.log(filesToUpload)}}>Date</Label>
+             <DatePicker selected={newDate}  placeholderText="When" className="inputclass2" onChange={handleChange} minDate={new Date()}/>
              <Label className="mt-3">Location</Label>
-             <InputField placeholder="Where" value={location} onChange={handleLocation} className="inputclass"></InputField>
+             <InputField placeholder="Where" value={location} onChange={handleLocation} className="inputclass2"></InputField>
              <Label className="mt-3">Reason</Label>
-             <InputField placeholder="Enter details" value={reason} onChange={handleReason} className="inputclass"></InputField>
-             <Label className="mt-3">Attachments</Label>
-             <input type="file" style={{display:"none"}} onChange={fileSelecthandler} ref={fileref}/>
+             <InputField placeholder="Enter details" value={reason} onChange={handleReason} className="inputclass2"></InputField>
+             <Label className="inputclass2 inputclass mt-3">Attachment</Label>
+             <input type="file" className="inputclass2" style={{display:"none"}} onChange={fileSelecthandler} ref={fileref}/>
             <Button onClick={()=>fileref.current.click()}>
-              <span className="fileaddtxt">Add a file</span>&nbsp;or drop files here 
+              <span className="inputclass3 fileaddtxt">Add a file</span>&nbsp;or drop files here 
             </Button>
             {filesToUpload.length > 0 && filesToUpload.map((item,index)=>{
               return (

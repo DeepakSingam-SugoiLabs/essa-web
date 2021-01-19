@@ -9,12 +9,14 @@ import React from "react";
 import styled from 'styled-components';
 
 const MyBtn = styled.button`
-padding:1% 5%;
+white-space: nowrap;
+width: 18%;
+height: 60px;
 border:none;
 border-radius:33px;
 background:linear-gradient(to right,#37a2ff,#6287fb,#6386fb);
 font-family:"sfdisplay-bold";
-font-size:20px;
+font-size:18px;
 box-shadow: 0 10px 20px 0 rgba(60, 159, 254, 0.3);
 line-height:24px;
 border: solid 1px rgba(0, 0, 0, 0);

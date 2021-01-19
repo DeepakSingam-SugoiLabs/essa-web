@@ -10,8 +10,9 @@ import React from "react";
 
 const Head = styled.div`
 font-family:"sfdisplay-bold";
-font-size:32px;
+font-size:27px;
 line-height:38px;
+margin-top:10px
 `
 
 function HeadingSecondary({title,design=""}) {

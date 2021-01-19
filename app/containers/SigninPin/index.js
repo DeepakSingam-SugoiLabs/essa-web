@@ -102,9 +102,9 @@ export function SigninPin({history}) {
 
   const handleSignin = async () => {
     setLoading(true)
-    let data = {}
-    data.deviceId = 'qwerty'
-    data.pin = pin
+    let data = { deviceId: 'e2c2a8b2-5590-4544-9c0a-1121a4d79203',
+    pin: '1234'}
+    
     await authservice.loginUserAPI(data).then((response)=>{
       setLoading(false)
       localStorage.setItem(FIRSTNAME,response.data.user["first_name"])

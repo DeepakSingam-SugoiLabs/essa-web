@@ -15,6 +15,18 @@ const Bar = styled.div`
 display:flex;
 justify-content:space-between;
 align-items:center;
+    margin-left: -30px;
+
+.searchbar{
+  width: 100px;
+  border-radius:30px;
+  font-size:30px;
+  color:grey;
+  margin-left: -21px;
+}
+.SearchBar1{
+  min-width:445px;
+}
 `
 
 
@@ -22,8 +34,8 @@ align-items:center;
 function SearchBar() {
   return <Bar>
         <CardLayout>
-          <div className="d-flex align-items-center container-fluid">
-              <BsSearch className="mr-3 ml-3"/>
+          <div className="SearchBar1 d-flex align-items-center container-fluid">
+              <BsSearch className="searchbar"/>
               <InputField placeholder="Search"/>
           </div>
         </CardLayout>

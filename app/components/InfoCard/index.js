@@ -12,9 +12,12 @@ import styled from 'styled-components';
 import news from '../../images/news.png'
 
 const Section = styled.div`
-margin-left:10%;
+margin-left:5%;
 margin-right:10%;
 margin-bottom:5%;
+.namehead{
+  font-size:20px;
+}
 .subhead{
   font-family:"sfpro-regular";
   font-size:21px;
@@ -44,6 +47,7 @@ display:flex;
 flex-direction:column;
 justify-content:center;
 align-items:flex-start;
+margin-bottom:10px;
 `
 const HCardArena = styled.div`
 height:93px;
@@ -141,7 +145,7 @@ function InfoCard() {
   
   return <CardLayout>
     <Section>
-    <HeadingSecondary title="Hi Ahmed" design="mt-4 mb-2"/>
+    <HeadingSecondary className="namehead" style="font-size:28px;" title="Hi Ahmed" design="mt-4 mb-2"/>
     <div className="subhead">You have <span className="notify">5 incoming requests</span> today</div>
     <div className="d-flex row justify-content-between controlwidth my-3">
     {dt.map((item)=>{

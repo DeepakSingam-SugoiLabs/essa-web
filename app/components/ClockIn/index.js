@@ -19,6 +19,9 @@ flex-direction:column;
 justify-content:space-evenly;
 align-items:center;
 height:70vh;
+.Requestheading{
+  font-size:20px;
+}
 .amounthrs{
   font-size:30px;
   line-height:58px;
@@ -26,6 +29,7 @@ height:70vh;
   padding-left:10px;
 }
 .hrstext{
+  font-size:15px;
   text-align:center;
   font-size:22px;
   line-height:22px;
@@ -49,6 +53,8 @@ height:70vh;
   margin-bottom:20px;
 }
 .error-text{
+  margin-left:50px;
+  width:50%;
   font-family:"sfdisplay-regular";
   font-size:21px;
   color:var(--FARAH-verify-grey);
@@ -67,7 +73,7 @@ outline:none;
 transition: 0.2s all;
 box-shadow: 1px 3px 11px 6px rgba(0,0,0,0.15);
 font-size:21px;
-color:var(--FARAH-light-grey);
+color:grey;
 font-family:"sfdisplay-regular";
 :focus{
   outline:none;
@@ -216,7 +222,7 @@ function ClockIn({history}) {
                              {loading && <Loader small={true} color="text-secondary"/>}
                           </Button>
                       </div>
-                     <ExptBtn onClick={()=>history.push("/exceptionattendence/0")}>
+                     <ExptBtn className="Requestheading"onClick={()=>history.push("/exceptionattendence/0")}>
                             Request Exception
                      </ExptBtn>   
                   </AlignItems>

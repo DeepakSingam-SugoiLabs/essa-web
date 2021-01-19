@@ -14,8 +14,10 @@ import InfoCard from "../../components/InfoCard";
 
 export function UserInfoSection({history}) {
   return <MainPage history={history}>
-    <Heading title="Home"/>
-    <InfoCard/>
+    <Heading title="Home" style="
+    margin-top: 17px;
+    margin-bottom: 43px;"/>
+    <InfoCard />
   </MainPage>;
 }
 

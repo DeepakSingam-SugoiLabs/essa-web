@@ -13,8 +13,10 @@ import {data} from '../../components/common/AllData/dashboarddata'
 import { Link } from "react-router-dom";
 
 const Card = styled.div`
-width:280px;
+width:190px;
 height:240px;
+margin-right:40px;
+
 `
 
 const StyledLink = styled(Link)`
@@ -33,7 +35,7 @@ align-items:center;
 justify-content:space-evenly;
 margin:20px ;
 .subheading{
-  font-size:27px;
+  font-size:20px;
   font-family:"sfdisplay-light";
   line-height: 34px;
   text-align:center;
@@ -61,7 +63,7 @@ function FeatureSection() {
   }
 
   return (
-    <div className="d-flex justify-content-between row mt-5">
+    <div className="d-flex row mr-20">
       {data.map((item,i)=>{
           return <DataCard name={item.name} icon={item.icon} link={item.link} key={i}/>
       })}

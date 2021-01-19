@@ -7,7 +7,7 @@ function HomeIconunselect() {
       data-name="Group 2787"
       viewBox="0 0 24 24"
       height="50px"
-      width="50px"
+      width="38px"
     >
       <path
         fill="#c8ced6"

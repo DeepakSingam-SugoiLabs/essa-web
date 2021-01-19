@@ -1,0 +1,8 @@
++ lint-staged@8.2.1
+removed 3 packages, updated 2 packages and audited 1830 packages in 25.432s
+
+87 packages are looking for funding
+  run `npm fund` for details
+
+found 421 vulnerabilities (321 low, 3 moderate, 97 high)
+  run `npm audit fix` to fix them, or `npm audit` for details

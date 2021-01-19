@@ -19,14 +19,14 @@ import { incomingrequestservice } from "../../components/_services/incomingreque
 
 const Title = styled.div`
   font-family: "sfdisplay-bold";
-  font-size: 36px;
+  font-size: 30px;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.19;
   letter-spacing: normal;
   text-align: left;
-  color: var(--FARAH-mid-grey);
+  color: black;
   margin-top:2%;
   margin-bottom:2%;
 
@@ -51,14 +51,14 @@ font-stretch: normal;
 }
 .heading{
   font-family:"sfdisplay-bold";
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
   
  
 }
 .subheading{
   font-family:"sfdisplay-light";
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 300;
   
 }
